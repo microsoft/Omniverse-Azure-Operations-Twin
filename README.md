@@ -46,13 +46,14 @@ Trademarks This project may contain trademarks or logos for projects, products, 
 
 <img src="images/image2.png"/>
 
-Contoso Hypermarket, famously a leading international consumer goods distributor and retailer ([Jumpstart Agora](https://aka.ms/ArcJumpstartAgoraCHM)), has expanded to the food processing industry and are at the forefront of industrial digitization.With a sprawling operational footprint that spans multiple countries, the company is committed to leveraging cutting-edge technologies to drive innovation, operational excellence, sustainability, and safety across its extensive network of production facilities.
+Contoso Hypermarket, a leading international consumer goods distributor and retailer, is spearheading digital transformation in the retail industry. The company uses advanced technologies like Azure IoT Operations, NVIDIA Omniverse, and Open Universal Scene Definition (OpenUSD) to enhance its warehouse operations. This integration allows for accurate 3D representations connected to real-time data, improving decision-making and efficiency.
 
-At the heart of their operations lies a sophisticated integration of Azure IoT Operations, NVIDIA Omniverse, and OpenUSD. This unique combination of platforms and technologies power physically accurate 3D representations of the company’s industrial systems, connected to real-time data at the edge. These capabilities enable their operations teams to gain a comprehensive view of operations, accelerate decision-making, and enhance overall operational efficiency.
+Many enterprises, including Contoso, are adopting AI for more automated systems, centralizing operations in remote centers with interactive 3D workflows. These workflows help teams quickly identify issues, perform analyses, and provide expert guidance.
 
-Like Contoso Hypermarket, many enterprises are embracing AI to achieve more automated and autonomous systems and facilities. This shift has led to the centralization of operations teams in remote operations centers, where they embrace more interactive and intuitive 3D workflows to achieve their goals. These workflows allow teams to quickly navigate areas of interest, identify issues, perform analyses, and provide expert guidance to distributed production sites.
+Microsoft and NVIDIA empower developers to create advanced 3D workflows that integrate IoT data with physics-based visualizations. The Fabric platform supports data management, while Omniverse and OpenUSD offer collaboration, simulation, and rendering capabilities. These tools help operations teams innovate and optimize for sustainability, safety, and efficiency.
 
-Microsoft and NVIDIA are empowering enterprises to transform their operations by enabling developers to build advanced 3D workflows that seamlessly unify and integrate operational IoT data with physics-based visualizations of operations. The Fabric platform provides developers with a robust foundation for data ingress and dissemination, while Omniverse and OpenUSD enable them to bring collaboration, simulation and physically based rendering capabilities to their solutions. By building solutions with these powerful capabilities, developers can ensure that operations teams are equipped with the tools and data they need to innovate and deliver more sustainable, safe, and efficient operations.
+>[!NOTE]
+>This Arc Jumpstart Drop focuses on building Omniverse and OpenUSD visualizations from real-time Edge data. For additional use-cases that illustrates other aspects of Contoso Hypermarket's digital transformation journey, see the Azure Arc Jumpstart Agora scenario: [Contoso Hypermarket](https://aka.ms/ArcJumpstartAgoraCHM).
 
 ## Omniverse Kit App Streaming Infrastructure Setup
 
