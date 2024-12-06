@@ -20,7 +20,7 @@ replicaCount: 1
 service:
   annotations:
     service.beta.kubernetes.io/azure-load-balancer-health-probe-request-path: /healthz
-    service.beta.kubernetes.io/azure-load-balancer-resource-group: rg-dsmarsh-ovas
+    service.beta.kubernetes.io/azure-load-balancer-resource-group: <YOUR_RG_HERE>
     service.beta.kubernetes.io/azure-load-balancer-internal-subnet: subnet-aks
     service.beta.kubernetes.io/azure-load-balancer-internal: "true"
   externalTrafficPolicy: Local
