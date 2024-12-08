@@ -1,0 +1,10 @@
+apiVersion: omniverse.nvidia.com/v1
+kind: Application
+metadata:
+  name: usd-viewer-msft
+  labels:
+    USD: "true"
+    visualisation: "true"
+spec:
+  name: Omniverse USD Viewer created by Martin Karlsson
+  description: This is a USD Viewer created for MSFT Ignite project.

@@ -1,0 +1,36 @@
+global:
+
+  ingress:
+    annotations:
+      alb.ingress.kubernetes.io/scheme: internet-facing
+      alb.ingress.kubernetes.io/target-type: ip
+      alb.ingress.kubernetes.io/healthcheck-path: /status
+      alb.ingress.kubernetes.io/inbound-cidrs: "<UPDATE or REMOVE depending on security rules and servers needing access>"
+      kubernetes.io/ingress.class: "alb"
+
+  imagePullSecrets:
+   - name: regcred
+
+applications:
+  ingress:
+    path: "/"
+    pathType: Prefix 
+    enabled: true
+
+  serviceConfig:
+    root_path: ""
+    prefix_url: "cfg/apps"
+
+  image:
+    repository: "nvcr.io/nvidia/omniverse/kit-appstreaming-applications"
+    pullPolicy: Always
+    tag: 1.8.0
+
+  applications: {}
+  profiles: {} 
+
+  monitoring:
+    # -- Enables the creation of ServiceMonitor resource.
+    enabled: true
+    # -- Prometheus namespace.
+    prometheusNamespace: "omni-streaming"
