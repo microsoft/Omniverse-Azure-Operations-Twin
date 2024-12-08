@@ -22,6 +22,8 @@ param gpuVMSize string
 
 param subnetId string
 
+param virtualNetworkName string
+
 @description('User name for the Linux Virtual Machines.')
 // param linuxAdminUsername string
 
@@ -88,4 +90,23 @@ resource aks 'Microsoft.ContainerService/managedClusters@2024-06-02-preview' = {
   }
 }
 
+resource vnet 'Microsoft.Network/virtualNetworks@2023-09-01' existing = {
+  name: virtualNetworkName
+  scope: resourceGroup()
+}
+
+var roleDefinitionID = '4d97b98b-1d4f-4787-a291-c67834d212e7'
+var roleAssignmentName = guid(clusterName, roleDefinitionID, resourceGroup().id)
+
+resource roleAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
+  name: roleAssignmentName
+  scope: vnet
+  properties: {
+    roleDefinitionId: resourceId('Microsoft.Authorization/roleDefinitions', roleDefinitionID)
+    principalId: aks.identity.principalId
+    principalType: 'ServicePrincipal'
+  }
+}
+
 output controlPlaneFQDN string = aks.properties.fqdn
+output principalId string = aks.identity.principalId
