@@ -51,9 +51,9 @@ spec:
           args:
             - --source=service
             - --source=ingress
-            - --domain-filter=ovas.omniverse.nvidia.com
+            - --domain-filter=beckerobrien.com
             - --provider=azure
-            - --azure-resource-group=rg-amata-msft-pal
+            - --azure-resource-group=rg-nvidia
             - --txt-prefix=externaldns-
           volumeMounts:
             - name: azure-config-file

@@ -1,8 +1,8 @@
 #!/bin/bash
-SUBSCRIPTION_ID="60762596-e998-40df-8b39-796ed1f4f2ee"
+SUBSCRIPTION_ID="7a074df0-d2da-4def-92f3-cef1819caf9e"
 EXTERNALDNS_NEW_SP_NAME="OVASExtrernalDNSSP" # name of the service principal
-AZURE_DNS_ZONE_RESOURCE_GROUP="rg-amata-msft-pal" # name of resource group where dns zone is hosted
-AZURE_DNS_ZONE="ovas.omniverse.nvidia.com" # DNS zone name like example.com or sub.example.com
+AZURE_DNS_ZONE_RESOURCE_GROUP="rg-nvidia" # name of resource group where dns zone is hosted
+AZURE_DNS_ZONE="beckerobrien.com" # DNS zone name like example.com or sub.example.com
 
 # Create the service principal
 DNS_SP=$(az ad sp create-for-rbac --name $EXTERNALDNS_NEW_SP_NAME)
