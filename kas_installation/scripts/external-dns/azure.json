@@ -1,7 +1,7 @@
 {
-    "tenantId": "228df7ad-dab9-4bb5-826d-6b4efd786150",
-    "subscriptionId": "7a074df0-d2da-4def-92f3-cef1819caf9e",
+    "tenantId": "69bddfff-f913-44cf-bd6b-eac5ca8b08ed",
+    "subscriptionId": "4fb32ac0-2b77-4277-86d4-871a23657c89",
     "resourceGroup": "rg-nvidia",
-    "aadClientId": "82054782-cbec-4cf3-8339-0d5d6499bfbd",
+    "aadClientId": "abd9c2b1-e9c9-4fc9-a580-7bc0e18e5f23",
     "aadClientSecret": ""
 }

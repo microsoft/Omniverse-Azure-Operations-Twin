@@ -19,9 +19,9 @@ spec:
         - name: regcred
     streamingKit:
       image:
-        repository: <Container_Registry_path>
+        repository: nvcr.io/nvidia/omniverse/usd-viewer
         pullPolicy: Always
-        tag: '<tag>'
+        tag: '0.2.0'
       envoy:
         enabled: true
         secretRef: stream-tls-secret

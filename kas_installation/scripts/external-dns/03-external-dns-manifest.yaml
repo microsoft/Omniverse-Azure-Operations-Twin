@@ -51,9 +51,9 @@ spec:
           args:
             - --source=service
             - --source=ingress
-            - --domain-filter=beckerobrien.com
+            - --domain-filter=contoso-omniverse.com
             - --provider=azure
-            - --azure-resource-group=rg-nvidia
+            - --azure-resource-group=rg-contoso-omniverse-dns
             - --txt-prefix=externaldns-
           volumeMounts:
             - name: azure-config-file

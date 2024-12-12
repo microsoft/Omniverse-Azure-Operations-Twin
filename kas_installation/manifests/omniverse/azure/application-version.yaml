@@ -1,13 +1,13 @@
 apiVersion: omniverse.nvidia.com/v1
 kind: ApplicationVersion
 metadata:
-  name: usd-viewer-msft-106.1.0
+  name: usd-viewer-msft-0.2.0
   labels:
     app: usd-viewer-msft
     applicationName: usd-viewer-msft
-    version: '<tag>'
+    version: '0.2.0'
 spec:
   helm_chart: ngc-omniverse/kit-appstreaming-session
   helm_chart_version: '1.8.0'
-  container: <Full_Container_path>
-  container_version: '106.1.0-msft'
+  container: nvcr.io/nvidia/omniverse/usd-viewer
+  container_version: '0.2.0'

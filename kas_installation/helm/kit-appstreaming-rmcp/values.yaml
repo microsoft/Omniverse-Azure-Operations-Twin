@@ -4,8 +4,8 @@ global:
 
 rmcp:
   serviceConfig:
-    root_path: ""
-    prefix_url: "/rmcp"
+    root_path: /api/v1
+    prefix_url: /rmcp
     
     # -- Flux release deployment timeout
     helm_flux_release_timeout: "5m"
