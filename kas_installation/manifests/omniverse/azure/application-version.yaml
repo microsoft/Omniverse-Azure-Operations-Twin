@@ -9,5 +9,5 @@ metadata:
 spec:
   helm_chart: ngc-omniverse/kit-appstreaming-session
   helm_chart_version: '1.8.0'
-  container: ACR-specific-endpoint/usd-viewer
+  container: acromnistreaming.azurecr.io/usd-viewer
   container_version: 'usd-viewer-ccci'
