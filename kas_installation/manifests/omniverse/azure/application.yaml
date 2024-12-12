@@ -1,7 +1,7 @@
 apiVersion: omniverse.nvidia.com/v1
 kind: Application
 metadata:
-  name: usd-viewer-msft
+  name: usd-viewer-ccci
   labels:
     USD: "true"
     visualisation: "true"

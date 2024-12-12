@@ -6,7 +6,7 @@ spec:
   name: AzureLB example profile
   description: Default profile - uses an AzureLB per stream
   supportedApplications:
-    - name: "usd-viewer-msft"
+    - name: "usd-viewer-ccci"
       versions:
         - '*'
   chartMappings:
@@ -16,12 +16,12 @@ spec:
   chartValues:
     global:
       imagePullSecrets:
-        - name: regcred
+        - name: myregcred
     streamingKit:
       image:
-        repository: acromnistreaming.azurecr.io/usd-viewer
+        repository: acromnistreaming.azurecr.io/usd-viewer-ccci
         pullPolicy: Always
-        tag: 'usd-viewer-ccci'
+        tag: '0.1.0'
       envoy:
         enabled: true
         secretRef: stream-tls-secret
