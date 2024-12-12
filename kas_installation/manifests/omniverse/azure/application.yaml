@@ -6,5 +6,5 @@ metadata:
     USD: "true"
     visualisation: "true"
 spec:
-  name: Omniverse USD Viewer created by Martin Karlsson
+  name: Omniverse USD Viewer
   description: This is a USD Viewer created for MSFT Ignite project.

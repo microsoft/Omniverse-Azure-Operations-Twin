@@ -19,9 +19,9 @@ spec:
         - name: regcred
     streamingKit:
       image:
-        repository: nvcr.io/nvidia/omniverse/usd-viewer
+        repository: acromnistreaming.azurecr.io/usd-viewer
         pullPolicy: Always
-        tag: '0.2.0'
+        tag: 'usd-viewer-ccci'
       envoy:
         enabled: true
         secretRef: stream-tls-secret
